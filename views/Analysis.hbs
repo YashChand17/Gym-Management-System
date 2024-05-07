@@ -1,0 +1,43 @@
+{{!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Analysis Page</title>
+    <link rel="stylesheet" type="text/css" href="analysis.css" />
+  </head>
+  <body > --}}
+     {{> _sidebar}}
+     <div id="analysis">
+      <header>
+        <h1>Analysis</h1>
+      </header>
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th>Member Information</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>No. of Males in the gym</td>
+              <td>{{analysisData.maleCount}}</td>
+            </tr>
+            <tr>
+              <td>No. of Females in the gym</td>
+              <td>{{analysisData.femaleCount}}</td>
+            </tr>
+            <tr>
+              <td>Most active gym time</td>
+              <td> {{analysisData.mostActiveTime}}</td>
+            </tr>
+            <tr>
+              <td>Daily gym users</td>
+              <td>{{analysisData.attendanceCount}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+    </body>
+</html>

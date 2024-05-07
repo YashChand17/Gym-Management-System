@@ -1,0 +1,43 @@
+{{!-- add header --}}
+{{> _sidebar}}
+{{!-- add header --}}
+
+
+
+<!-- main site -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/dashboard/Trainers/add_Trainer" class="border-shadow">
+                <span class="text-gradient">New Trainer<i class="fa-solid fa-user"></i></span>
+            </a>
+        </div>
+        <!-- form handling -->
+        <form action="/" method="post">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>@Email</th>
+                        <th>Gender</th>
+                        <th>status</th>
+                         <th>Members</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{!-- add show --}}
+                    {{> _showtrainers}}
+                    {{!-- add show --}}
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+<!-- main site -->
+
+
+{{!-- add footer --}}
+{{> _footer}}
+{{!-- add footer --}}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+.attendance{
+    background-image: linear-gradient(to right, #74F2CE, #c3fdf2);
+    
+
+}
+.entry-head{
+    font-size: large;
+    font-weight:500 ;
+    
+}
+.b-insert{
+    background-color: #74F2CE;
+    border-radius: 20px;
+    border-style:none ;
+    font-size: large;
+    width: 150px;
+}
+.modal-header{
+    background-image: linear-gradient(to right, #74F2CE, #c3fdf2);
+}
+.active{
+    background-color: #74F2CE;
+}
+.inactive{
+    background-color: #e48a8a;
+}

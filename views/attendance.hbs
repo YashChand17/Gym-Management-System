@@ -1,0 +1,83 @@
+{{>_sidebar}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendence</title>
+
+  <link rel="stylesheet" href="/stylesheets/attendance.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <script src="https://kit.fontawesome.com/6b9f4c2388.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar header bg-info bg-body-tertiary attendance">
+    <div class="container-sm">
+      <a style="font-size: 24px" class="navbar-brand" href="#">
+        <i style="font-size: 24px" class="fa-sharp fa-solid fa-user"></i>
+        <b>Attendence</b>
+        {{!-- <i style="font-size: 24px; position: relative; left: 1175px"
+          class="fa-sharp fa-solid fa-calendar-days"></i> --}}
+      </a>
+      {{!-- <form class="d-flex" id="Get-Records">
+        <input class="form-control me-1 font-size: 24px w-50 justify-content-start" id="attendance-date" type="date"
+          aria-label="Date">
+        <a href="/dashboard/Attendance/api/attendances?date={{formattedDate}}"class="btn btn-outline-success font-size: 24px h-auto my-2 justify-content-end"
+          type="submit">SUBMIT</a>
+      </form> --}}
+
+    </div>
+  </nav>
+
+  <br />
+
+  <section class="container border-bottom p-4 border-1 border-dark">
+    <div class="container d-inline">
+      <div class="float-start mx-2 entry-head p-1">Entries</div>
+      <div class="float-end mx-2 entry-head">
+        <button type="button" class="b-insert p-1" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          data-bs-whatever="@getbootstrap">
+          Mark entry
+        </button>
+      </div>
+    </div>
+  </section>
+
+{{>_showattendance}}
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Mark Attendance
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          {{>_markattendance}}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="b-insert" data-bs-dismiss="modal">
+            Close
+          </button>
+
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="/javascripts/attendance.js"></script>
+</body>
+
+</html>

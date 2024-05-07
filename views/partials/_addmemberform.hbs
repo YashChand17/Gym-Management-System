@@ -1,0 +1,96 @@
+<!-- add user form -->
+<form action="/dashboard/Members/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="Name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="Name" id="Name" value="" placeholder="Mark Stoenis">
+        </div>
+        <div class="form-group">
+            <label for="UserID" class="text-light">UserID</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="UserID" id="UserID" value="" placeholder="Mark@2003">
+        </div>
+        <div class="form-group">
+            <label for="email" class="text-light">Email</label>
+            <input id="email" type="text" name="email" value="" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="Password" class="text-light">Password</label>
+            <input type="hidden" name="id" value="">
+
+            <input id="Password" type="password" name="Password" value="" placeholder="write ur password here">
+        </div>
+        
+        <div class="form-group">
+            <label for="Height" class="text-light">Height</label>
+            <input type="hidden" name="id" value="">
+
+            <input id="Height" type="number" step="0.01" name="Height" value="" placeholder="mention your height in meter">
+        </div>
+        <div class="form-group">
+            <label for="Weight" class="text-light">Weight</label>
+            <input type="hidden" name="id" value="">
+            <input id="Weight" type="number" step="0.01" name="Weight" value="" placeholder="mention your Weight in Kgs">
+        </div>
+        <div class="form-group">
+            <label for="BirthDate" class="text-light">BirthDate</label>
+            <input type="hidden" name="id" value="">
+            <input id="BirthDate" type="date"  name="BirthDate" value="" placeholder="mention your Birthdate">
+        </div>
+         <div class="form-group">
+            <label for="MembershipPlan" class="text-light">Membership Plan Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="MembershipPlan" id="MembershipPlan" value="" placeholder="montly/quaterly/yearly etc.">
+        </div>
+        <div class="form-group">
+            <label for="MembershipStartDate" class="text-light">Membership start date</label>
+            <input type="hidden" name="id" value="">
+            <input type="date" id="MembershipStartDate"  name="MembershipStartDate" value="" placeholder="mention  MembershipStartDate">
+        </div>
+        <div class="form-group">
+            <label for="Phone" class="text-light">Phone no.</label>
+            <input type="hidden" name="id" value="">
+            <input id="Phone" type="text"  name="Phone" value="" placeholder="mention your contact no (preferable whatsapp.no)">
+        </div>
+        <div class="form-group">
+            <label for="AlternatePhone" class="text-light">Alternate Phone no.</label>
+            <input type="hidden" name="id" value="">
+            <input id="AlternatePhone" type="Text"  name="AlternatePhone" value="" placeholder="mention your other contact no (if any)">
+        </div>
+        <div class="form-group">
+            <label for="Address" class="text-light">Address</label>
+            <input type="hidden" name="id" value="">
+            <input id="Address" type="Text"  name="Address" value="" placeholder="mention your current Address">
+        </div>
+
+        <div class="form-group">
+            <label for="Gender" class="text-light">Gender</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="Gender" value="Male">
+                <label for="radio-2" class="radio-label">Male</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="Gender" value="Female">
+                <label for="radio-3" class="radio-label">Female</label>
+            </div>
+        </div>
+
+        {{!-- <div class="form-group">
+            <label for="Status" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="Status" value="Active">
+                <label for="radio-4" class="radio-label">Active</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="Status" value="Inactive">
+                <label for="radio-5" class="radio-label">Inactive</label>
+            </div>
+        </div> --}}
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>

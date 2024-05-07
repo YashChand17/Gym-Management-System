@@ -1,0 +1,20 @@
+{{#each plans}}
+
+<tr>
+    
+    <td>{{MembershipName}}</td>
+    <td>{{Duration}}</td>
+    <td>{{Price}}</td>
+   
+    
+    <td>
+        <a href="/dashboard/Plans/update_plan?id={{_id}}" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fa-solid fa-pencil"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id="{{_id}}">
+            <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
+        </a>
+    </td>
+</tr>
+
+{{/each}}

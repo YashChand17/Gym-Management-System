@@ -1,0 +1,55 @@
+{{!-- add header --}}
+{{> _sidebar}}
+{{!-- add header --}}
+
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/dashboard/Plans"><i class="fas fa-angle-double-left"></i> All Plans</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update Plan</h2>
+            <span class="text-light">Use the below form to update a account</span>
+        </div>
+
+        <!-- update user form -->
+        <form method="post" id="update_plan">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for=" MembershipName" class="text-light">Name</label>
+                    <input type="hidden" name="id" value="{{plan._id}}">
+                    <input type="text" name=" MembershipName" id=" MembershipName" value="{{plan.Name}}" placeholder="Plan Name">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="Duration" class="text-light">Duration in days</label>
+                    <input type="hidden" name="id" value="{{plan._id}}">
+                    <input id="Duration" type="number" step="0.01" name="Duration" value="{{plan.Duration}}"
+                        placeholder="mention Duration">
+                </div>
+                <div class="form-group">
+                    <label for="Price" class="text-light">Price</label>
+                    <input type="hidden" name="id" value="{{plan._id}}">
+                    <input id="Price" type="number" step="0.01" name="Price" value="{{plan.Price}}"
+                        placeholder="mention Price of plan in Rs">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Save</button>
+                </div>
+            </div>
+
+    </div>
+    </form>
+
+    </div>
+</main>
+<!-- /Main Site -->
+
+{{!-- add footer --}}
+{{> _footer}}
+{{!-- add footer --}}

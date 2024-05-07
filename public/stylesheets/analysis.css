@@ -1,0 +1,83 @@
+#analysis {
+  /* Body styles */
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+#analysis header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#analysis h1 {
+  font-size: 24px;
+  margin: 0;
+  line-height: 60px;
+}
+
+/* Main content styles */
+#analysis main {
+  margin-top: 220px;
+  padding: 20px;
+}
+
+#analysis table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#analysis thead {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#analysis th,
+#analysis td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+#analysis th {
+  background-color: #333;
+  color: white;
+}
+
+#analysis tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 767px) {
+  /* Header styles for small screens */
+  #analysis header {
+    height: 50px;
+  }
+
+  #analysis h1 {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  /* Table styles for small screens */
+  #analysis table {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+  

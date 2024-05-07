@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Aims Gym Website</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <!-- email js file link  -->
+  <script src="/javascripts/contactform.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("U25qQoJwg0E4O9FbG");
+    })();
+  </script>
+
+</head>
+
+<body>
+
+  <!-- header section starts  -->
+
+  <header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <img id="gym_logo"  src="/images/logo.png" alt="">
+    <a href="#" class="logo"> <span id="B">B</span>uild Aims</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#plans">Plans</a>
+      <a href="#team">Trainers</a>
+      <a href="#review">Review</a>
+      <a href="#blog">Blogs</a>
+      <a href="#contact">Contact</a>
+      <a id="login_form" href="/login">Login</a>
+    </nav>
+
+    <div class="icons">
+      <!-- <i class="fas fa-user" id="login-btn"></i> -->
+    </div> 
+
+
+  </header>
+
+  <!-- header section ends -->
+
+
+  <!-- home section starts  -->
+
+  <section class="home" id="home">
+
+    <div class="content">
+      <h3>Be stronger than your excuses</h3>
+      <p>Do not give up,the beginning is always the hardest</p>
+      <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+      <span class="vid-btn active" data-src="images/Video1.mp4"></span>
+      <span class="vid-btn" data-src="/videos/Video2.mp4"></span>
+      <span class="vid-btn" data-src="/videos/Video3.mp4"></span>
+      <span class="vid-btn" data-src="/videos/Video4.mp4"></span>
+      <span class="vid-btn" data-src="/videos/Video5.mp4"></span>
+      <span class="vid-btn" data-src="/videos/Video6.mp4"></span>
+
+    </div>
+
+    <div class="video-container">
+      <video src="/videos/Video1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+  </section>
+
+  <!-- home section ends -->
+
+  <!-- about section starts -->
+
+  <section class="features" id="features">
+
+    <h1 class="heading"> <span>Gym Features</span> </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="image">
+          <img src="/images/unisexgym.jpg" alt="">
+        </div>
+        <div class="content1">
+          <img src="/images/icon-1.png" alt="">
+          <h3>Unisex Gym</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+
+        </div>
+      </div>
+
+      <div class="box second">
+        <div class="image">
+          <img src="/images/zumbayoga.jpg" alt="">
+        </div>
+        <div class="content1">
+          <img src="/images/yoga1.png" alt="">
+          <h3>Zumba/Yoga Classes Available</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="/images/cardio and functional.jpg" alt="">
+        </div>
+        <div class="content1">
+          <img src="/images/cardio1.png" alt="">
+          <h3>Cardio and Functional Area</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- features section ends -->
+
+  <!-- plan section starts -->
+  <section class="plans" id="plans">
+
+    <h1 class="heading1"> <span> membership plan </span></h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3 class="title">Plan1</h3>
+        <h3 class="price">Rs.3000</h3>
+        <h3 class="month">3 months</h3>
+        <ul>
+          <li><i class="fas fa-check"></i>weight lifting</li>
+          <li><i class="fas fa-check"></i>cardio</li>
+          <li><i class="fas fa-check"></i>yoga</li>
+          <li><i class="fas fa-check"></i>training</li>
+
+        </ul>
+        <a href="#"><button class="btn">check out</button></a>
+      </div>
+
+      <div class="box">
+        <h3 class="title">Plan2</h3>
+        <h3 class="price">Rs.6000</h3>
+        <h3 class="month">6 months</h3>
+        <ul>
+          <li><i class="fas fa-check"></i>weight lifting</li>
+          <li><i class="fas fa-check"></i>cardio</li>
+          <li><i class="fas fa-check"></i>yoga</li>
+          <li><i class="fas fa-check"></i>training</li>
+          <li><i class="fas fa-check"></i>Steam</li>
+        </ul>
+        <a href="#"><button class="btn">check out</button></a>
+      </div>
+
+      <div class="box">
+        <h3 class="title">Plan3</h3>
+        <h3 class="price">Rs.8000</h3>
+        <h3 class="month">12 months</h3>
+        <ul>
+          <li><i class="fas fa-check"></i>weight lifting</li>
+          <li><i class="fas fa-check"></i>cardio</li>
+          <li><i class="fas fa-check"></i>yoga</li>
+          <li><i class="fas fa-check"></i>training</li>
+          <li><i class="fas fa-check"></i>Steam</li>
+          <li><i class="fas fa-check"></i>Locker room</li>
+        </ul>
+        <a href="#"><button class="btn">check out</button></a>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- offer section ends -->
+
+  <!-- Trainer section starts -->
+  <section class="team" id="team">
+
+    <div class="heading2">
+      <span>Expert Trainers</span>
+    </div>
+
+    <div class="box-container container">
+
+      <div class="box">
+        <img src="/images/trainer1.png" alt="">
+        <div class="content2">
+          <span>gym trainer</span>
+          <h3>someone's name</h3>
+        </div>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="/images/trainer2.png" alt="">
+        <div class="content2">
+          <span>gym trainer</span>
+          <h3>someone's name</h3>
+        </div>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="/images/trainer1.png" alt="">
+        <div class="content2">
+          <span>gym trainer</span>
+          <h3>someone's name</h3>
+        </div>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Trainer section ends -->
+
+  <!-- banner section starts  -->
+
+  <section class="banner">
+
+    <span>join us now</span>
+    <h3>get upto 50% discount</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto nesciunt aut sapiente quis inventore
+      quam vitae quod illum incidunt.</p>
+    <a href="#" class="btn">get discount</a>
+
+  </section>
+
+  <!-- banner section ends -->
+
+
+  <!-- review section starts  -->
+
+  <section class="Review" id="review">
+
+    <div class="heading3">
+      <span>Review</span>
+    </div>
+
+  </section>
+
+  <div class="wrapper">
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p class="contentcolor">Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita
+        reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+      <div class="content3">
+        <div class="info">
+          <div class="name">Alex Smith</div>
+          <div class="job">Designer | Developer</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="/images/pic1.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p class="contentcolor">Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita
+        reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+      <div class="content3">
+        <div class="info">
+          <div class="name">Steven Chris</div>
+          <div class="job">YouTuber | Blogger</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="/images/pic2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left  quote"></i>
+      <p class="contentcolor">Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita
+        reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+      <div class="content3">
+        <div class="info">
+          <div class="name">Kristina Bellis</div>
+          <div class="job">Freelancer | Advertiser</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="/images/pic3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- review section ends -->
+
+
+  <!-- blog section starts -->
+  <section class="Blog" id="blog">
+
+    <div class="heading4">
+      <span>Blogs</span>
+    </div>
+
+  </section>
+  <section class="center">
+
+    <div class="blog-card">
+      <input type="radio" name="select" id="tap-1" checked>
+      <input type="radio" name="select" id="tap-2">
+      <input type="radio" name="select" id="tap-3">
+      <input type="radio" name="select" id="tap-4">
+      <input type="radio" name="select" id="tap-5">
+      <input type="checkbox" id="imgTap">
+      <div class="sliders">
+        <label for="tap-1" class="tap tap-1"></label>
+        <label for="tap-2" class="tap tap-2"></label>
+        <label for="tap-3" class="tap tap-3"></label>
+        <label for="tap-4" class="tap tap-4"></label>
+        <label for="tap-5" class="tap tap-5"></label>
+      </div>
+      <div class="inner-part">
+        <label for="imgTap" class="img">
+          <img class="img-1" src="/images/img-1.jpg">
+        </label>
+        <div class="content content-1">
+          <span>Day 1</span>
+          <div class="title">
+            Beginner Chest Exercises
+          </div>
+          <div class="text">
+            The chest, or pectoralis major, is anatomically divided into an upper, middle and lower part, which known as
+            the clavicular, sternocostal and abdominal head.
+          </div>
+          <a href="https://www.mensjournal.com/health-fitness/10-best-chest-exercises-beginners/">Read More</a>
+        </div>
+      </div>
+      <div class="inner-part">
+        <label for="imgTap" class="img">
+          <img class="img-2" src="/images/img-2.jpg">
+        </label>
+        <div class="content content-2">
+          <span>Day 2</span>
+          <div class="title">
+            Beginner Leg Exercises
+          </div>
+          <div class="text">
+            The main muscle groups in the legs are: quadriceps, hamstrings, adductors in the upper leg or thigh, and the
+            calves in the lower legs.
+          </div>
+          <a href="https://www.mensjournal.com/health-fitness/10-best-legs-exercises-beginners/">Read More</a>
+        </div>
+      </div>
+      <div class="inner-part">
+        <label for="imgTap" class="img">
+          <img class="img-3" src="/images/img-4.jpg">
+        </label>
+        <div class="content content-3">
+          <span>Day 3</span>
+          <div class="title">
+            Beginner Shoulder Exercises
+          </div>
+          <div class="text">
+            The four rotator cuff muscles include the supraspinatus, infraspinatus, teres minor, and subscapularis.
+          </div>
+          <a href="https://www.mensjournal.com/health-fitness/10-best-shoulders-exercises-beginners/">Read More</a>
+        </div>
+      </div>
+      <div class="inner-part">
+        <label for="imgTap" class="img">
+          <img class="img-4" src="/images/img-3.jpg">
+        </label>
+        <div class="content content-4">
+          <span>Day 4</span>
+          <div class="title">
+            Beginner Back Exercises
+          </div>
+          <div class="text">
+            Superficial extrinsic muscles of the back: trapezius, latissimus dorsi, rhomboid major, rhomboid minor, and
+            levator scapulae·
+          </div>
+          <a href="https://www.mensjournal.com/health-fitness/10-best-back-exercises-beginners/">Read More</a>
+        </div>
+      </div>
+      <div class="inner-part">
+        <label for="imgTap" class="img">
+          <img class="img-5" src="/images/img-5.jpg">
+        </label>
+        <div class="content content-5">
+          <span>Day 5</span>
+          <div class="title">
+            Beginner Arm Exercises
+          </div>
+          <div class="text">
+            The arms can be divided into three separate muscle groups biceps, triceps and forearms.
+          </div>
+          <a href="https://www.mensjournal.com/health-fitness/13-best-arms-workouts-beginners-mens-journal/">Read
+            More</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- blog section ends -->
+
+  <!-- contact section starts -->
+  <section class="Contact" >
+
+    <div class="heading5">
+      <span>Contact</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.8024445885453!2d72.8127526148281!3d19.464082586866557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a98e0a2dab61%3A0x653dc9894f319d83!2sBuild%20Aims%20Fitness%20Zone!5e0!3m2!1sen!2sin!4v1662892615830!5m2!1sen!2sin"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="row">
+
+      <div class="contact-info">
+
+        <div class="box">
+          <h3> <i class="fas fa-home"></i> address </h3>
+          <p>Deviroyal Complex, A- 4th Floor, <br>
+            Veer Savarkar Marg, opp. Makwana Complex, <br>
+            Virar, Maharashtra 401305</p>
+        </div>
+
+        <div class="box">
+          <h3> <i class="fas fa-envelope"></i> e-mail </h3>
+          <p>BuildAimsGym@gmail.com</p>
+        </div>
+
+        <div class="box">
+          <h3> <i class="fas fa-phone"></i> phone </h3>
+          <p>+91 8554793761</p>
+        </div>
+
+        <div class="box">
+          <h3> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/buildaimsfitnesszone/">Instagram</a>
+          </h3>
+
+        </div>
+
+      </div>
+
+      <div class="contact-form-container">
+        <form>
+
+          <h3>get in touch</h3>
+
+          <div class="inputBox">
+            <input id="full_name" type="text" placeholder="full name " required>
+            <input id="email_id" type="email" placeholder="e-mail " required>
+            <input id="phone_number" type="tel" placeholder="Phone Number " required>
+            <input id="age" type="number" placeholder="Age">
+            <input id="gender" type="text" placeholder="Gender">
+            <input id="plan" type="text" placeholder="Plan (3/6/12 months)">
+          </div>
+
+          <textarea name="" id="message" cols="30" rows="10" placeholder="message"></textarea>
+          <a onclick="SendMail()" id="button">Submit</a>
+        </form>
+
+
+
+      </div>
+
+  </section> 
+
+
+  <!-- contact section ends -->
+
+
+
+  <!-- custom js file link  -->
+
+  <script src="/javascripts/script.js"></script>
+
+</body>
+
+</html>

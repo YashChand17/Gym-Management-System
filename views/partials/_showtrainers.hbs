@@ -1,0 +1,23 @@
+{{#each trainers}}
+
+<tr>
+    <td>{{UserID}}</td>
+    <td>{{Name}}</td>
+    <td>{{email}}</td>
+    <td>{{Gender}}</td>
+    <td>{{Status}}</td>
+    <td>
+        <span>{{Client}}</span>
+        
+    </td>
+    <td>
+        <a href="/dashboard/Trainers/update_trainer?id={{_id}}" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fa-solid fa-pencil"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id="{{_id}}">
+            <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
+        </a>
+    </td>
+</tr>
+
+{{/each}}

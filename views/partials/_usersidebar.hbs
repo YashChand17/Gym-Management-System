@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/stylesheets/sidebar.css" />
+    <link rel="stylesheet" href="/stylesheets/userprofile.css" />
+    
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/membertab.css">
+    {{!-- <link rel="stylesheet" href="./stylesheets/useranalytics.css" />
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    /> --}}
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+  </head>
+  <body id="independent">
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="/images/logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">BuildAims Gym</span>
+            <span class="profession">User</span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="/userdashboard">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Profile</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="/userdashboard/Recipe">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">Recipe</span>
+              </a>
+            </li>
+
+            
+
+            
+
+            <li class="nav-link">
+              <a href="/userdashboard/Shop">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Shop</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="">
+            <a href="/userdashboard/logout">
+              <i class="bx bx-log-out icon"></i>
+              <span class="text nav-text">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <script src="/javascripts/sidebar.js"></script>

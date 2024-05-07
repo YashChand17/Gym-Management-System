@@ -1,0 +1,99 @@
+{{!-- add header --}}
+{{> _sidebar}}
+{{!-- add header --}}
+
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/dashboard/Trainers"><i class="fas fa-angle-double-left"></i> All Users</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update Trainer</h2>
+            <span class="text-light">Use the below form to update a account</span>
+        </div>
+
+        <!-- update user form -->
+        <form method="post" id="update_trainer">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for="Name" class="text-light">Name</label>
+                    <input type="hidden" name="id" value="{{trainer._ID}}">
+                    <input type="text" name="Name" id="Name" value="{{trainer.Name}}" placeholder="Mark Stoenis">
+                </div>
+                <div class="form-group">
+                    <label for="UserID" class="text-light">UserID</label>
+                    <input type="hidden" name="id" value="{{trainer._id}}">
+                    <input type="text" name="UserID" id="UserID" value="{{trainer.UserID}}" placeholder="Mark@2003">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-light">Email</label>
+                    <input type="hidden" name="id" value="{{trainer._id}}">
+                    <input id="email" type="text" name="email" value="{{trainer.email}}"
+                        placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="Password" class="text-light">Password</label>
+                    <input type="hidden" name="id" value="{{trainer._id}}">
+
+                    <input id="Password" type="password" name="Password" value="{{trainer.Password}}"
+                        placeholder="write ur password here">
+                </div>
+                <div class="form-group">
+                    <label for="Client" class="text-light">Client</label>
+                    <input type="hidden" name="id" value="{{trainer._id}}">
+
+                    <input id="Client" type="text" name="Client" value="{{trainer.Client}}"
+                        placeholder="pls write userid and separate userid by comma ','">
+                </div>
+                <div class="form-group">
+                    <label for="Gender" class="text-light">Gender</label>
+                    <div class="radio inline">
+                        {{#eq trainer.Gender "Male"}}<input type="radio" id="radio-2" name="Gender" value="Male"
+                            checked>{{/eq}}{{#noteq trainer.Gender "Male"}}<input type="radio" id="radio-2"
+                            name="Gender" value="Male">{{/noteq}}
+                        <label for="radio-2" class="radio-label">Male</label>
+                    </div>
+                    <div class="radio inline">
+                        {{#eq trainer.Gender "Female"}}<input type="radio" id="radio-3" name="Gender" value="Female"
+                            checked>{{/eq}} {{#noteq trainer.Gender "Female"}}<input type="radio" id="radio-3"
+                            name="Gender" value="Female">{{/noteq}}
+                        <label for="radio-3" class="radio-label">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Status" class="text-light">Status</label>
+                    <div class="radio inline">
+                        {{#eq trainer.Status "Active"}}<input type="radio" id="radio-4" name="Status" value="Active"
+                            checked>{{/eq}}
+                        {{#noteq trainer.Status "Active"}}
+                        <input type="radio" id="radio-4" name="Status" value="Active">
+                        {{/noteq}}
+                        <label for="radio-4" class="radio-label">Active</label>
+                    </div>
+                    <div class="radio inline">
+                        {{#eq trainer.Status "Inactive"}}<input type="radio" id="radio-5" name="Status" value="Inactive"
+                            checked>{{/eq}}{{#noteq trainer.Status "Inactive"}}<input type="radio" id="radio-5"
+                            name="Status" value="Inactive">{{/noteq}}
+                        <label for="radio-5" class="radio-label">Inactive</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Save</button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</main>
+<!-- /Main Site -->
+
+{{!-- add footer --}}
+{{> _footer}}
+{{!-- add footer --}}

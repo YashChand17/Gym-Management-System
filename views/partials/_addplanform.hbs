@@ -1,0 +1,28 @@
+<form action="/dashboard/Plans/api/plans" method="POST" id="add_plan">
+    <div class="new_plan">
+        
+        <div class="form-group">
+            <label for=" MembershipName" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="MembershipName" id="MembershipName" value="" placeholder="Plan Name">
+        </div>
+        
+        
+        <div class="form-group">
+            <label for="Duration" class="text-light">Duration in days</label>
+            <input type="hidden" name="id" value="">
+            <input id="Duration" type="number" step="0.01" name="Duration" value="" placeholder="mention Duration">
+        </div>
+        <div class="form-group">
+            <label for="Price" class="text-light">Price</label>
+            <input type="hidden" name="id" value="">
+            <input id="Price" type="number" step="0.01" name="Price" value="" placeholder="mention Price of plan in Rs">
+        </div>
+        
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>

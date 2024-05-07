@@ -1,0 +1,28 @@
+{{!-- add header --}}
+{{> _sidebar}}
+{{!-- add header --}}
+
+
+<!-- Main Site -->
+        <main id="site-main">
+            <div class="container">
+                <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/dashboard/Plans"><i class="fas fa-angle-double-left"></i> All Plan</a>
+                </div>
+                </div>
+                <div class="form-title text-center">
+                    <h2 class="text-dark">New Plan</h2>
+                    <span class="text-light">Use the below form to create a new Plan</span>
+                </div>
+
+                <!-- add user form -->
+                {{> _addplanform}}
+            
+            </div>
+        </main>
+        <!-- /Main Site -->
+
+{{!-- add footer --}}
+{{> _footer}}
+{{!-- add footer --}}

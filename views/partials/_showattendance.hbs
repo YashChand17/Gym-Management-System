@@ -1,0 +1,16 @@
+{{#each attendance}}
+<section class="data container my-1 p-4">
+    {{#eq this.User.Status "Active"}}
+      <div class="row active p-2 rounded-4 ">
+        <div class="col-sm-6 text-start px-5">{{this.User.UserID}}</div>
+        <div class="col-sm-6 text-end px-5">{{this.formattedTime}}</div>
+      </div>
+    {{/eq}}
+    {{#noteq this.User.Status "Active"}}
+      <div class="row inactive p-2 rounded-4 ">
+        <div class="col-sm-6 text-start px-5">{{this.User.UserID}}</div>
+        <div class="col-sm-6 text-end px-5">{{this.formattedTime}}</div>
+      </div>
+    {{/noteq}}
+  </section>
+  {{/each}}

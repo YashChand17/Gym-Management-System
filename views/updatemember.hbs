@@ -1,0 +1,140 @@
+{{!-- add header --}}
+{{> _sidebar}}
+{{!-- add header --}}
+
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/dashboard/Members"><i class="fas fa-angle-double-left"></i> All Users</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update Member</h2>
+            <span class="text-light">Use the below form to update a account</span>
+        </div>
+
+        <!-- update user form -->
+        <form method="post" id="update_user">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for="Name" class="text-light">Name</label>
+                    <input type="hidden" name="id" value="{{member._ID}}">
+                    <input type="text" name="Name" id="Name" value="{{member.Name}}" placeholder="Mark Stoenis">
+                </div>
+                <div class="form-group">
+                    <label for="UserID" class="text-light">UserID</label>
+                    <input type="hidden" name="id" value="{{member._id}}">
+                    <input type="text" name="UserID" id="UserID" value="{{member.UserID}}" placeholder="Mark@2003">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-light">Email</label>
+                    <input type="hidden" name="id" value="{{member._id}}">
+                    <input id="email" type="text" name="email" value="{{member.email}}" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="Password" class="text-light">Password</label>
+                    <input type="hidden" name="id" value="{{member._id}}">
+
+                    <input id="Password" type="password" name="Password" value="{{member.Password}}"
+                        placeholder="write ur password here">
+                </div>
+                
+                <div class="form-group">
+                    <label for="Height" class="text-light">Height</label>
+                    <input type="hidden" name="id" value="{{member._id}}">
+
+                    <input id="Height" type="number" step="0.01" name="Height" value="{{member.Height}}"
+                        placeholder="mention your height in meter">
+                </div>
+                <div class="form-group">
+                    <label for="Weight" class="text-light">Weight</label>
+                    <input type="hidden" name="id" value="{{member._id}}">
+                    <input id="Weight" type="number" step="0.01" name="Weight" value="{{member.Weight}}"
+                        placeholder="mention your Weight in Kgs">
+                </div>
+                <div class="form-group">
+                    <label for="BirthDate" class="text-light">BirthDate</label>
+                    <input type="hidden" name="id" value="{{member._id}}">
+                    <input id="BirthDate" type="date"  name="BirthDate" value="{{member.BirthDate}}"
+                        placeholder="mention your birthdate">
+                </div>
+                <div class="form-group">
+            <label for="MembershipStartDate" class="text-light">Membership start date</label>
+            <input type="hidden" name="id" value="{{member._id}}">
+            <input id="MembershipStartDate" type="date"  name="MembershipStartDate" value="{{member.MembershipStartDate}}" placeholder="mention  MembershipStartDate">
+        </div>
+        <div class="form-group">
+            <label for="MembershipPlan" class="text-light">Membership Plan Name</label>
+            <input type="hidden" name="id" value="{{member._id}}">
+            <input type="text" name="MembershipPlan" id="MembershipPlan" value="{{this.MembershipPlan.MembershipName}}" placeholder="montly/Quaterly/yearly etc.">
+        </div>
+                <div class="form-group">
+                    <label for="Phone" class="text-light">Phone no.</label>
+                    <input type="hidden" name="id" value="{{member._id}}">
+                    <input id="Phone" type="text" name="Phone" value="{{member.Phone}}"
+                        placeholder="mention your contact no (preferable whatsapp.no)">
+                </div>
+                <div class="form-group">
+                    <label for="AlternatePhone" class="text-light">Alternate Phone no.</label>
+                    <input type="hidden" name="id" value="{{member._id}}">
+                    <input id="AlternatePhone" type="Text" name="AlternatePhone" value="{{member.AlternatePhone}}"
+                        placeholder="mention your other contact no (if any)">
+                </div>
+                <div class="form-group">
+                    <label for="Address" class="text-light">Address</label>
+                    <input type="hidden" name="id" value="{{member._id}}">
+                    <input id="Address" type="Text" name="Address" value="{{member.Address}}"
+                        placeholder="mention your current Address">
+                </div>
+
+                <div class="form-group">
+                    <label for="Gender" class="text-light">Gender</label>
+                    <div class="radio inline">
+                        {{#eq member.Gender "Male"}}<input type="radio" id="radio-2" name="Gender" value="Male"
+                            checked>{{/eq}}{{#noteq member.Gender "Male"}}<input type="radio" id="radio-2" name="Gender"
+                            value="Male">{{/noteq}}
+                        <label for="radio-2" class="radio-label">Male</label>
+                    </div>
+                    <div class="radio inline">
+                        {{#eq member.Gender "Female"}}<input type="radio" id="radio-3" name="Gender" value="Female"
+                            checked>{{/eq}} {{#noteq member.Gender "Female"}}<input type="radio" id="radio-3"
+                            name="Gender" value="Female">{{/noteq}}
+                        <label for="radio-3" class="radio-label">Female</label>
+                    </div>
+                </div>
+
+                {{!-- <div class="form-group">
+                    <label for="Status" class="text-light">Status</label>
+                    <div class="radio inline">
+                        {{#eq member.Status "Active"}}<input type="radio" id="radio-4" name="Status" value="Active"
+                            checked>{{/eq}}
+                        {{#noteq member.Status "Active"}}
+                        <input type="radio" id="radio-4" name="Status" value="Active">
+                        {{/noteq}}
+                        <label for="radio-4" class="radio-label">Active</label>
+                    </div>
+                    <div class="radio inline">
+                        {{#eq member.Status "Inactive"}}<input type="radio" id="radio-5" name="Status" value="Inactive"
+                            checked>{{/eq}}{{#noteq member.Status "Inactive"}}<input type="radio" id="radio-5"
+                            name="Status" value="Inactive">{{/noteq}}
+                        <label for="radio-5" class="radio-label">Inactive</label>
+                    </div>
+                </div> --}}
+
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Save</button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</main>
+<!-- /Main Site -->
+
+{{!-- add footer --}}
+{{>_footer}}
+{{!-- add footer --}}
