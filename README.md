@@ -1,0 +1,2 @@
+Gym Management System
+This Gym Management System is developed for Build Aims gym located in Virar, Mumbai. The system replaces manual record-keeping with an automated solution to streamline member management and improve overall gym operations. It allows for easy data entry, provides information on gym facilities and instructors, and ensures secure storage of member data in a MongoDB database. The system is built using HTML, CSS, JavaScript for the frontend, and Node.js with Express.js for the backend.
